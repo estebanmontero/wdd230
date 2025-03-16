@@ -1,0 +1,20 @@
+@media (min-width: 768px) {  /* Adjust breakpoint as needed */
+    
+    /* Navigation: Change from stacked to horizontal */
+    nav ul {
+        flex-direction: row;  /* Horizontal layout */
+        justify-content: space-around;
+    }
+    
+    nav li {
+        width: auto;
+
+    }
+
+    /* Layout: Side-by-side grid */
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;  /* Learning Activities card is twice as wide */
+        gap: 20px;
+    }
+}
