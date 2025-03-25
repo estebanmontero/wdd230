@@ -17,79 +17,75 @@ header, nav, main, footer {
     padding: 20px;
 }
 
-
-
 /* Navigation */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items:center;  /*this center the items */
-    gap: 10px;  /* more space in the items */
+    align-items: center;  /* Center the items */
+    gap: 10px;  /* More space in the items */
     background-color: #b93d3d;
     padding: 10px;
-
 }
 
 nav ul li {
     margin-bottom: 10px;
 }
 
-nav  ul li a {
+nav ul li a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff; /* White text for better contrast */
     padding: 10px 20px;
     display: block;
-    text-decoration: none; /*this eliminates the underline */
-   
+    text-decoration: none; /* This eliminates the underline */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+nav ul li a:hover {
+    background-color: #922f2f; /* Darker red on hover */
+    color: #fff;
 }
 
 nav ul li a.active {
     font-weight: bold;
-    background-color: #666;
-}
-
-/* Style for the "Home" navigation item only */
-nav ul li:first-child {
-    background-color: #ff6600; /* Unique color for "Home" */
-
-    margin:0 px;
-
+    background-color: #444; /* Darker gray for better contrast */
+    color: #fff; /* White text */
 }
 
 
+
+nav ul li:first-child a {
+    color: #fff; /* White text for contrast */
+}
+
+/* Main Content */
 main {
     display: grid;
     grid-template-columns: 1fr;  
     gap: 10px;
     padding: 20px;
-}
-
-main {
     max-width: 900px;        
-    margin: 0 auto;           /* Center horizontally */
-    padding: 20px;
+    margin: 0 auto; /* Center horizontally */
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 /* Cards */
-.card-conteiner  {
+.card-container {
     background-color: white;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
 
 .card {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
 }
-
 
 .card ul {
     list-style-type: none;  
@@ -102,9 +98,11 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     background-color: #161010;
-    color: rgb(223, 223, 223);
+    color: #f1f1f1; /* Lighter gray for readability */
+    padding: 10px;
 }
 
+/* Header */
 header {
     display: flex;               
     align-items: center;         
@@ -114,14 +112,14 @@ header {
     padding: 20px;
 }
 
-/* my Image */
+/* Image */
 header img {
     width: 140px;                
     height: 200px;              
     object-fit: cover;           
 }
 
-/* My name */
+/* Name */
 header span {
     font-size: 1.5rem;
     font-weight: bold;
