@@ -3,11 +3,13 @@
 
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;  /* Applying Google Font */
-    background-color: #f8f9fa;  /* Light background */
-    color: #333;  /* Dark text */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 0;
     padding: 0;
+    font-size: 18px;  /* Increased font size for readability */
+    line-height: 1.5;
 }
 
 /* Layout */
@@ -23,9 +25,9 @@ nav ul {
     padding: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center the items */
-    gap: 10px;  /* More space in the items */
-    background-color: #b93d3d;
+    align-items: center;
+    gap: 10px;
+    background-color: #8B0000; /* Darker red for contrast */
     padding: 10px;
 }
 
@@ -35,60 +37,70 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* White text for better contrast */
-    padding: 10px 20px;
+    color: #ffffff;
+    padding: 12px 22px;
     display: block;
-    text-decoration: none; /* This eliminates the underline */
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    outline: none; /* Remove default outline but add focus styling below */
 }
 
-nav ul li a:hover {
-    background-color: #922f2f; /* Darker red on hover */
+nav ul li a:hover, 
+nav ul li a:focus {
+    background-color: #600000; /* Darker red for hover/focus */
     color: #fff;
+    outline: 3px solid #FFD700; /* Gold outline for focus indication */
 }
 
 nav ul li a.active {
     font-weight: bold;
-    background-color: #444; /* Darker gray for better contrast */
-    color: #fff; /* White text */
+    background-color: #444;
+    color: #fff;
+    outline: none;
+    border: 2px solid #FFD700; /* Gold border for active page */
+}
+
+
+nav ul li a.active {
+    aria-current: "page";
 }
 
 
 
 nav ul li:first-child a {
-    color: #fff; /* White text for contrast */
+    color: #fff;
 }
 
 /* Main Content */
 main {
     display: grid;
-    grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
     gap: 10px;
     padding: 20px;
-    max-width: 900px;        
-    margin: 0 auto; /* Center horizontally */
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
     border-radius: 10px;
 }
 
 /* Cards */
 .card-container {
-    background-color: white;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Stronger contrast shadow */
 }
 
 .card {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card ul {
-    list-style-type: none;  
+    list-style-type: none;
     padding: 0;
 }
 
@@ -96,32 +108,32 @@ main {
 footer {
     text-align: center;
     margin-top: 20px;
-    font-size: 14px;
-    background-color: #161010;
-    color: #f1f1f1; /* Lighter gray for readability */
-    padding: 10px;
+    font-size: 16px;
+    background-color: #0D0D0D; /* Darker black for better contrast */
+    color: #FFFFFF; /* White text for max contrast */
+    padding: 15px;
 }
 
 /* Header */
 header {
-    display: flex;               
-    align-items: center;         
-    justify-content: center;   
-    text-align: center;          
-    gap: 10px;                  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
     padding: 20px;
 }
 
 /* Image */
 header img {
-    width: 140px;                
-    height: 200px;              
-    object-fit: cover;           
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
 }
 
 /* Name */
 header span {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
