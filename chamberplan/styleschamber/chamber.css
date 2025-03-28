@@ -38,10 +38,10 @@ section {
     box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;
 }
-
+/*
 section:hover {
     transform: scale(1.03);
-}
+} */
 
 h2 {
     font-family: 'Montserrat', sans-serif;

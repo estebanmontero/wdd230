@@ -1,0 +1,55 @@
+/* Large Screen Styles */
+
+@media screen and (min-width: 1024px) {
+    
+    /* Header */
+    header {
+        padding: 20px 50px;
+    }
+
+    nav ul li {
+        margin: 0 25px;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: 500px;
+    }
+
+    .hero-content {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+    }
+
+    /* About Section */
+    .about-columns {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: 30%;
+    }
+
+    /* Events and Spotlights */
+    .current-events, .company-spotlights {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .event, .spotlight {
+        width: 45%;
+    }
+
+    /* Footer */
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+}
+
