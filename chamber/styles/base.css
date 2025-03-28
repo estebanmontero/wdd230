@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f5f5f5;
-    color: #222; /* Dark gray text */
+    color: #222; /* gray text */
 }
 
 /* Header */
@@ -88,7 +88,7 @@ section {
 }
 
 /* Responsive Image Placeholder */
-.image-placeholder {
+.image {
     width: 100%;
     height: 150px;
     background: #ddd;
