@@ -105,3 +105,26 @@ footer {
 }
 
 
+/* Menu Button (Hamburger) */
+#menu {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    position: right;
+}
+
+/* Default hamburger icon */
+#menu::before {
+    content: "☰"; /* Hamburger icon */
+}
+
+/* When menu is open, show close (X) icon */
+#menu.open::before {
+    content: "❌";
+}
