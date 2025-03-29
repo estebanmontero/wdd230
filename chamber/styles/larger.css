@@ -47,9 +47,10 @@
 
     /* Footer */
     footer {
-        display: flex;
+
         justify-content: space-between;
         padding: 20px 50px;
+        text-align: center;
     }
 }
 
