@@ -18,11 +18,24 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px; 
     background: #B30000; /* Dark Red */
     color: white;
+
+ 
+        z-index: 5;
+
+        width: 100%;
+        max-width: 1500px;
+        margin-right: auto;
+        margin-left: auto;
+
+
+      }
+
+  
     
-}
+
 
 .logo {
     font-size: 1.5rem;
