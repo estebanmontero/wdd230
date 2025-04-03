@@ -19,6 +19,26 @@ header, nav, main, footer {
     padding: 20px;
 }
 
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero h1 {
+    margin-top: 20px; /* Adds space between the image and heading */
+    font-size: 2rem;
+    color: #333;
+}
+
 /* Navigation */
 nav ul {
     list-style: none;
@@ -47,9 +67,9 @@ nav ul li a {
 
 nav ul li a:hover, 
 nav ul li a:focus {
-    background-color: #600000; /* Darker red for hover/focus */
+    background-color: #600000; 
     color: #fff;
-    outline: 3px solid #FFD700; /* Gold outline for focus indication */
+    outline: 3px solid #FFD700; 
 }
 
 nav ul li a.active {
@@ -57,15 +77,13 @@ nav ul li a.active {
     background-color: #444;
     color: #fff;
     outline: none;
-    border: 2px solid #FFD700; /* Gold border for active page */
+    border: 2px solid #FFD700; 
 }
 
-
+/*  ARIA  */
 nav ul li a.active {
     aria-current: "page";
 }
-
-
 
 nav ul li:first-child a {
     color: #fff;
@@ -124,18 +142,30 @@ header {
     padding: 20px;
 }
 
-/* Image */
+/* Header Image */
 header img {
     width: 140px;
     height: 200px;
     object-fit: cover;
 }
 
-/* Name */
+/* Header Name */
 header span {
     font-size: 1.8rem;
     font-weight: bold;
 }
 
 
-
+.map{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+    width: 90%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .map iframe{
+    width: 100%;
+  }

@@ -14,7 +14,7 @@
     /* Layout: Side-by-side grid */
     main {
         display: grid;
-        grid-template-columns: 2fr 1fr;  /* Learning Activities card is twice as wide */
+        grid-template-columns: 2fr ;  /* Learning Activities card is twice as wide */
         gap: 20px;
     }
 }
