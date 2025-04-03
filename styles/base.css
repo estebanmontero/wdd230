@@ -183,7 +183,7 @@ header span {
 }
 
 footer a {
-    color: #FFD700; /* Gold  for high contrast */
+    color: #FFD700; /* Gold  for high contrast  remeber email always need footer a for their color */
     text-decoration: underline; 
     font-weight: bold;
 }
