@@ -80,10 +80,7 @@ nav ul li a.active {
     border: 2px solid #FFD700; 
 }
 
-/*  ARIA  */
-nav ul li a.active {
-    aria-current: "page";
-}
+
 
 nav ul li:first-child a {
     color: #fff;
