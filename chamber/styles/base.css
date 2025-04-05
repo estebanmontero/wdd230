@@ -444,7 +444,7 @@ ul {
     }
 
     .right-sidebar {
-        grid-template-columns: 1 fr;
+        grid-template-columns: 1fr;
     }
 }
 
