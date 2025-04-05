@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chamber of Commerce - Area Overview</title>
+
+  <meta name="Author" content="ESTEBAN MONTERO"/>
+  <meta property="og:title" content="ESTEBAN MONTERO - WDD 230 Web Frontend Development" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://estebanmontero.github.io/wdd230/chamber/images/digital.webp" />
+  <meta property="og:url" content="https://estebanmontero.github.io/wdd230" /> 
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+  <link rel="icon" href="digital.ico" />
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img class="logo" src="images/logo.png" alt="digital chamber of commerce" width="80" height="80" />
+    </a>
+    <button id="menu"></button>
+    <nav>
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="#" title="About Us">About Us</a></li>
+        <li><a href="#" title="Service">Services</a></li>
+        <li><a href="#" title="History">Products</a></li>
+        <li><a href="#" title="Contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="grid-container">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar left-sidebar">
+        <div class="demographics-box">
+          <h2>📊 Demographics</h2>
+          <p><strong>Population:</strong> Approximately 1.2 million residents</p>
+          <p>The region is a vibrant, fast-growing hub of digital professionals, students, and entrepreneurs.</p>
+          <p><strong>Age Distribution:</strong></p>
+          <ul>
+            <li>18–24: 15% — College students and young creators</li>
+            <li>25–34: 30% — Early-career professionals and tech workers</li>
+            <li>35–44: 25% — Business owners and managers</li>
+            <li>45–54: 18% — Investors and senior marketers</li>
+            <li>55+: 12% — Retired professionals and consultants</li>
+          </ul>
+          <p><strong>Education Levels:</strong></p>
+          <ul>
+            <li>Bachelor’s Degree: 40%</li>
+            <li>Master’s or Higher: 20%</li>
+            <li>High School Diploma: 30%</li>
+            <li>Other/Vocational: 10%</li>
+          </ul>
+        </div>
+
+        <div class="stats-box">
+          <h2>📈 Statistical Data</h2>
+          <p><strong>Average Annual Income:</strong> $55,000</p>
+          <p><strong>Employment Rate:</strong> 92%</p>
+          <p>Most residents work in flexible, remote digital fields that promote innovation and collaboration.</p>
+          <p><strong>Top Industry Sectors:</strong></p>
+          <ul>
+            <li>Technology and Software Development: 35%</li>
+            <li>Marketing, Branding & Advertising: 25%</li>
+            <li>Finance and E-commerce: 15%</li>
+            <li>Retail & Online Sales: 15%</li>
+            <li>Education & Freelance Services: 10%</li>
+          </ul>
+          <p><strong>Entrepreneurship:</strong> Over 60% of residents own or co-manage a digital business or project.</p>
+        </div>
+
+        <div class="box">
+          <h2>📅 Calendar</h2>
+          <h3 id="month">This Month's Highlights</h3>
+          <div id="calendar">
+            <p>April 10 – Digital Marketing Webinar</p>
+            <p>April 15 – Networking Mixer</p>
+            <p>April 22 – YouTube Growth Workshop</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="sidebar right-sidebar">
+        <div class="box">
+          <h2>🎟️ Events</h2>
+          <p>Our chamber regularly hosts in-person and virtual experiences to foster collaboration and learning:</p>
+          <ul>
+            <li>📅 Weekly Webinars with Digital Experts</li>
+            <li>🎤 Panel Discussions on Industry Trends</li>
+            <li>☕ Monthly Coffee & Networking Sessions</li>
+            <li>🏆 Annual Creator Awards and Gala</li>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>🏛️ Attractions</h2>
+          <p>Discover the top spots for innovation, education, and business development in our area:</p>
+          <ul>
+            <li>🚀 Startup Innovation Center</li>
+            <li>🎬 YouTube Creator Studio</li>
+            <li>💼 Financial District Offices</li>
+            <li>🌐 Tech Park & Co-working Spaces</li>
+            <li>🎓 Media Arts University Campus</li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- MAIN AREA: IMAGES -->
+      <section class="main-content">
+      <!--  <h2>🌟 Explore the Area Through Images</h2> -->
+        <div class="image-gallery">
+          <figure>
+            <img src="images/chmaber5.png" alt="YouTube workshop event" loading="lazy" width="400" height="250">
+
+          </figure>
+          <figure>
+            <img src="images/chamber6.png" alt="Startup center building" loading="lazy" width="400" height="250">
+
+          </figure>
+          <figure>
+            <img src="images/chamber7.png" alt="People at coffee networking" loading="lazy" width="400" height="250">
+
+          </figure>
+          <figure>
+            <img src="images/chamber8.png" alt="Tech park overview" loading="lazy" width="400" height="250">
+
+          </figure>
+          <figure>
+            <img src="images/chamber9.png" alt="Creator awards ceremony" loading="lazy" width="400" height="250">
+
+          </figure>
+          <figure>
+            <img src="images/chamber3.png" alt="Campus for digital education" loading="lazy" width="400" height="250">
+
+          </figure>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> ESTEBAN MONTERO - WDD230 PROJECT - COLOMBIA</p>
+    <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/calender.js"></script>
+</body>
+</html>
+
