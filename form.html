@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Helps with mobile responsiveness and improves user experience -->
+    <title>ESTEBAN MONTERO - WDD 230 - WEB FRONTEND DEVELOPMENT COURSE ASSIGNMENT 001</title>
+    <meta name="author" content="ESTEBAN MONTERO">   <!-- Useful for SEO -->
+
+    <meta property="og:title" content="ESTEBAN MONTERO - WDD 230 Web Frontend Development" />  
+    <!-- Helps social media platforms display page attractively -->
+    <meta property="og:type" content="website" /> 
+    <meta property="og:image" content="https://estebanmontero.github.io/wdd230/images/medellin1.webp" /> 
+    <!-- Should be an absolute URL and have 1200 x 630 pixels -->
+    <meta property="og:url" content="https://estebanmontero.github.io/wdd230/" /> 
+    
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/getDates.js"></script>
+    <link rel="icon" href="dog.ico">
+</head>
+<body>
+    <header>
+        <img src="images/placeholder.png" alt="Esteban Montero Picture" width="140" height="200"> 
+        <span>Esteban Montero</span>
+    </header>
+    <button id="menu"></button> <!-- This is the menu button -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active" aria-current="page">HOME</a></li>
+            <li><a href="chamber/index.html">CHAMBER</a></li>
+            <li><a href="chamberplan/chamber.html">SITE PLAN</a></li>
+            <li><a href="form.html">FORM</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <main>
+            <h1>Web Lab - Form Validation</h1>
+            <form method="get" action="record.html">
+                <label for="username">Username:
+                    <input type="text" id="username" name="username" required>
+                </label>
+    
+                <label for="password">Password:
+                    <input type="password" id="password" name="password" 
+                           pattern="[A-Za-z0-9]{8,}" 
+                           title="Password must be at least 8 alphanumeric characters" 
+                           required>
+                </label>
+    
+                <label for="confirmPassword">Confirm Password:
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </label>
+    
+                <label for="email">Email:
+                    <input type="email" id="email" name="email"
+                           pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                           title="Please enter a valid byui.edu email address"
+                           required>
+                </label>
+    
+                <label for="rating">Page Rating: 
+                    <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" 
+                           oninput="document.getElementById('ratingValue').textContent = this.value">
+                    <span id="ratingValue">5</span>
+                </label>
+    
+                <button type="submit">Submit Form</button>
+            </form>
+        </main>
+        
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> ESTEBAN MONTERO - WDD230 PROJECT - COLOMBIA</p>
+        <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="./scripts/getVisits.js"></script>
+    <script src="scripts/validatepasswordsform.js"></script>
+</body>
+</html>
