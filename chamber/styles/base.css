@@ -460,4 +460,136 @@ ul {
 .image-gallery{
     grid-column: 1/3 ;
 }
+
+
+/* join page*/
+
+.join-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  /* Desktop 2-column layout */
+  @media (min-width: 900px) {
+    .join-container {
+      flex-direction: row;
+    }
+  
+    .join-form, .membership-details {
+      flex: 1;
+    }
+  }
+  
+  /* === Form Styling === */
+  .join-form {
+    background-color: var(--background-white);
+    border: 2px solid var(--color-one);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  form.wf1 fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--color-two);
+  }
+  
+  form.wf1 legend {
+    background-color: var(--hook-green);
+    color: var(--background-white);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  form.wf1 label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+  
+  form.wf1 input,
+  form.wf1 textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 0.75rem;
+    border: 1px solid #999;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  form.wf1 textarea {
+    min-height: 100px;
+  }
+  
+  form.wf1 input[type="submit"] {
+    background-color: var(--hook-green);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px #ccc;
+    transition: background-color 0.3s;
+  }
+  
+  form.wf1 input[type="submit"]:hover {
+    background-color: #004d40;
+  }
+  
+  /* Required field validation color */
+  form.wf1 input:required {
+    border-left: 6px solid red;
+  }
+  form.wf1 input:required:valid {
+    border-left: 6px solid green;
+  }
+  
+  /* === Membership Options Section === */
+  .membership-details {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .membership-details h2,
+  .membership-details h3 {
+    color: var(--color-one);
+    margin-bottom: 1rem;
+  }
+  
+  .membership-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .membership-details li {
+    background-color: #e9e9e9;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    line-height: 1.5;
+  }
+  
+  .membership-details li:nth-child(even) {
+    background-color: #dcdcdc;
+  }
+  
+  .membership-details img {
+    width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+  }
+  
   

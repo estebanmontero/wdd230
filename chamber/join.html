@@ -3,211 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
     <title>Chamber of Commerce</title>
 
-    <meta name="Author" content="ESTEBAN MONTERO">   <!-- it's also really useful for SEO  -->
-    <meta property="og:title" content="ESTEBAN MONTERO - WDD 230 Web Frontend Development" />  <!-- this content help us with social media platforms to be atractive   -->
-    <meta property="og:type" content="website" /> <!-- Defines what kind of content the page represents in this case website.-->
-    <meta property="og:image" content="https://estebanmontero.github.io/wdd230/chamber/images/digital.webp" /> <!-- should be an absoulte url and image with this caracteristicas1200 x 630 pixels-->
+    <meta name="Author" content="ESTEBAN MONTERO">
+    <meta property="og:title" content="ESTEBAN MONTERO - WDD 230 Web Frontend Development" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://estebanmontero.github.io/wdd230/chamber/images/digital.webp" />
     <meta property="og:url" content="https://estebanmontero.github.io/wdd230" /> 
 
     <link rel="stylesheet" href="styles/normalize.css">
-
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-
     <link rel="icon" href="digital.ico">
-    <script src="scripts/getdates.js" defer></script>
 
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
 
     <!-- Header -->
     <header>
         <a href="index.html">
-            <img class="logo" src="images/logo.png" alt="digital chamber of commerce" width='80' height="80" > <!--remember that alt is a path for seo -->
+            <img class="logo" src="images/logo.png" alt="digital chamber of commerce" width="80" height="80">
         </a>
-        <button id="menu"></button> <!-- this is the menu button-->
-
-
+        <button id="menu"></button>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html" title="Home">HOME</a></li>
-                <li><a href="#" title="About Us" class="active">About Us</a></li>
+                <li><a href="#" title="About Us" class="active">ABOUT US</a></li>
                 <li><a href="discover.html" title="discover">DISCOVER</a></li>
-                <li><a href="join.html" title="History">JOIN</a></li>
+                <li><a href="join.html" title="join">JOIN</a></li>
                 <li><a href="#" title="Contact">Contact Us</a></li>
             </ul>
         </nav>
-   <!-- <div class="auth-buttons">
-            <button>Log In</button>
-            <button>Sign Up</button>
-        </div> -->
     </header>
 
-    <!-- Hero Section  -->
-    <div id="hero">
-        <div id="chamber-image">
-            <picture>
-                <!-- Image for large screens -->
-                <source srcset="images/digital1500x750.webp" media="(min-width: 1024px)">
-                <!-- Image for medium screens -->
-                <source srcset="images/digitalmedium.webp" media="(min-width: 768px)">
-                <!-- Default image for small screens -->
-                <img src="images/digitalsmall.webp" alt="Chamber Plan">
-            </picture>
+    <!-- Main Content -->
+    <main>
+        <h1 class="join-h1">Join the Chamber of Finance</h1>
+        <div class="join-container">
+          
+          <!-- FORM SECTION -->
+          <div class="join-form">
+            <form method="get" action="./thankyou.html" class="wf1">
+              <fieldset>
+                <legend>Future Partner Information</legend>
+                
+                <label for="fname">First Name* </label>
+                <input type="text" name="fname" id="fname" required tabindex="1" autocomplete="given-name">
+      
+                <label for="lname">Last Name* </label>
+                <input type="text" name="lname" id="lname" required tabindex="2" autocomplete="family-name">
+      
+                <label for="title">Position</label>
+                <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}" placeholder="Applicant title/Position" tabindex="3">
+      
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" placeholder="user@example.com" required tabindex="4" autocomplete="email">
+      
+                <label for="phone">Phone*</label>
+                <input type="tel" name="phone" id="phone" placeholder="5551234567" required tabindex="5" autocomplete="tel">
+      
+                <label for="organization">Business/Organization*</label>
+                <input type="text" name="organization" id="organization" placeholder="Name of your business" required tabindex="6">
+              </fieldset>
+      
+              <fieldset>
+                <legend>Membership Information</legend>
+                <p>Select your Membership level:</p>
+                <label><input type="radio" name="membership" id="np" value="NP" tabindex="7"> NP Membership</label>
+                <label><input type="radio" name="membership" id="bronze" value="bronze" tabindex="8"> Bronze Membership</label>
+                <label><input type="radio" name="membership" id="silver" value="silver" tabindex="9"> Silver Membership</label>
+                <label><input type="radio" name="membership" id="gold" value="gold" tabindex="10"> Gold Membership</label>
+              </fieldset>
+      
+              <fieldset>
+                <legend>Business/Organization Description</legend>
+                <label for="description">Description</label>
+                <textarea name="description" id="description" rows="6" placeholder="Enter your description here..." tabindex="11"></textarea>
+                <input type="hidden" name="formDate" id="formDate">
+              </fieldset>
+      
+              <input type="submit" value="Become a Member now!" class="button" tabindex="12">
+            </form>
+          </div>
+      
+          <!-- MEMBERSHIP DETAILS SECTION -->
+          <div class="membership-details">
+            <h2>Membership Levels & Benefits</h2>
+            <p>Choose a level that suits your goals and take advantage of exclusive benefits:</p>
+            <ul>
+              <li><strong>NP Membership (Free):</strong> Ideal for non-profits. Access basic events and support without a fee.</li>
+              <li><strong>Bronze ($100/year):</strong> Basic promotions, event invites, and training sessions for small businesses.</li>
+              <li><strong>Silver ($250/year):</strong> Advanced marketing tools, spotlight features, and enhanced exposure.</li>
+              <li><strong>Gold ($500/year):</strong> Full access to premium services, consulting, and exclusive business circles.</li>
+            </ul>
+            <img src="./images/finance-chamber.webp" alt="membership benefits" loading="lazy">
+          </div>
         </div>
-    </div>
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Product</h1>
-            <p>Connecting YouTube Marketing and Trading</p>
-            <button>Join Now</button>
-
-        </div>
-    </section>
-
-
-
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Us</h2>
-        <div class="about-columns">
-            <div class="column">
-                <div class="image"></div>
-                <h3>About Chamber</h3>
-                <p>Check what it's about!</p>
-            </div>
-            <div class="column">
-                <div class="image"></div>
-                <h3>Upcoming Events</h3>
-                <p>Read news from our company</p>
-            </div>
-            <div class="column">
-                <div class="image"></div>
-                <h3>Membership Benefits</h3>
-                <p>Meet our amazing team</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Events Section -->
-    <section class="current-events">
-        <h2>Upcoming Events</h2>
-        <div class="event">
-            <img src="image-placeholder-event1.jpg" alt="Event Image">
-            <h3>Marketing Trends 2025</h3>
-            <p>Join us on April 15th for an exclusive webinar on YouTube marketing strategies.</p>
-        </div>
-        <div class="event">
-            <img src="image-placeholder-event2.jpg" alt="Event Image">
-            <h3>Trader's Networking Meetup</h3>
-            <p>Meet industry experts and professionals in our live event on May 10th.</p>
-        </div>
-    </section>
-
-
-
-    <!-- Company Spotlights Section -->
-    <section class="company-spotlights">
-        <h2>Featured Businesses</h2>
-        <div class="spotlight">
-            <img src="image-company1.jpg" alt="Company Logo">
-            <h3>ABC Marketing Solutions</h3>
-            <p>Helping businesses grow with powerful video marketing strategies.</p>
-        </div>
-        <div class="spotlight">
-            <img src="image-company2.jpg" alt="Company Logo">
-            <h3>XYZ Trading Academy</h3>
-            <p>Learn to trade like a pro with our expert-led courses.</p>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter">
-        <div class="image"></div>
-        <div class="newsletter-info">
-            <h2>Newsletter</h2>
-            <p>Stay in the loop with our chamber news. Sign up to receive updates.</p>
-            <button>Sign Up</button>
-        </div>
-    </section>
-
-    <!-- Careers Section -->
-    <section class="careers">
-        <div class="career-info">
-            <h2>Careers</h2>
-            <p>Join our ambitious team and help us reach the sky!</p>
-            <button>Check Out</button>
-        </div>
-        <div class="image"></div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <h2>Testimonials</h2>
-        <p>People love this!</p>
-        <div class="testimonial">
-            <p>"This product brings so much value, I LOVE IT!"</p>
-            <p>⭐⭐⭐⭐⭐ - Alex Turner</p>
-        </div>
-        <div class="testimonial">
-            <p>"This product was sent from heaven!"</p>
-            <p>⭐⭐⭐⭐⭐ - Dolly Parton</p>
-        </div>
-        <div class="testimonial">
-            <p>"100% happiness."</p>
-            <p>⭐⭐⭐⭐⭐ - James Blake</p>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section class="blog">
-        <h2>Blog</h2>
-        <div class="blog-posts">
-            <div class="post">
-                <div class="image"></div>
-                <h3>What's up, company?</h3>
-                <p>Company News</p>
-            </div>
-            <div class="post">
-                <div class="image"></div>
-                <h3>How to bake a cake</h3>
-                <p>Everyone will love it</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup -->
-    <section class="newsletter-signup">
-        <input type="email" placeholder="Your Email">
-        <button>Subscribe</button>
-    </section>
-
-
-
-        <!-- Weather Card Section -->
-        <section class="weather-card">
-            <h2>Local Weather</h2>
-            <div class="weather">
-                <img src="placeholder-weather.jpg" alt="Weather Icon">
-                <p>🌤️ 72°F | Sunny</p>
-                <p>Location: New York, NY</p>
-            </div>
-        </section>
+      </main>
+      
+      
+      
 
     <!-- Footer -->
     <footer>
         <p>&copy; <span id="year"></span> ESTEBAN MONTERO - WDD230 PROJECT-COLOMBIA</p>
         <p>Contact information: <a href="mailto:mon15026@byui.edu">mon15026@byui.edu</a></p>
         <p id="lastModified"></p>
-
     </footer>
 
     <script src="scripts/menu.js"></script>
+    <script src="scripts/setdatetime.js"></script>
 
 </body>
 </html>
