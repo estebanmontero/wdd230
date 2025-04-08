@@ -533,12 +533,12 @@ ul {
   
   form.wf1 input[type="submit"] {
     background-color: var(--hook-green);
-    color: white;
+    color: rgb(4, 4, 4);
     border: none;
     cursor: pointer;
     margin-top: 1.5rem;
     font-weight: bold;
-    box-shadow: 2px 2px 8px #ccc;
+    box-shadow: 2px 2px 8px #6a4949;
     transition: background-color 0.3s;
   }
   
