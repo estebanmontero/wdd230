@@ -17,4 +17,29 @@
         grid-template-columns: 2fr ;  /* Learning Activities card is twice as wide */
         gap: 20px;
     }
+
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+
+
+    }
+
+    .card{
+        margin-left: 3em;
+        margin-right: 3em;
+        height: auto;  
+ 
+  
+    }
+
+    h1{
+        text-align: center;
+    };
 }
+
+
+
+

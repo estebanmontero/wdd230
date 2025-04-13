@@ -187,3 +187,18 @@ footer a {
     text-decoration: underline; 
     font-weight: bold;
 }
+
+.card {
+    margin: 2em;
+    height: auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    text-align: center;
+}
+
+
