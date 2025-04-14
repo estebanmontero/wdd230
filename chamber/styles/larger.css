@@ -54,3 +54,31 @@
     }
 }
 
+/* css MEmebers*/
+.directory-menu {
+    margin: 2rem 0;
+  }
+
+  #membersGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+
+  #membersList li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* You can optionally style list items more like rows here */
+  #membersList {
+    padding: 0;
+  }
+
+  #membersList li h3 {
+    margin-bottom: 0.25rem;
+  }
+
+
+

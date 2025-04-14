@@ -592,4 +592,179 @@ ul {
     border-radius: 6px;
   }
   
+
+/* Css members*/
+
+
+/* Base Styles - Mobile First */
+
+  
+
+  
+ 
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  .directory-menu {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .directory-menu button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 0.25rem;
+  }
+  
+  .member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .member-card img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  #membersGrid {
+    display: block;
+  }
+  
+  #membersList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  #membersList li {
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+    background-color: white;
+  }
+  
+  #membersList li:nth-child(even) {
+    background-color: #f4f4f4; /* Zebra striping for list view */
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+
+
+
+/* list css */
+
+/* Style for the list container */
+#membersList li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  gap: 1rem; /* space between elements */
+}
+
+/* Style for each list item */
+#membersList li {
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+#membersList li:hover {
+  transform: scale(1.01);
+  background-color: #f9f9f9;
+}
+
+/* Heading */
+#membersList li h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #2a2a2a;
+}
+
+/* Paragraphs */
+#membersList li p {
+  margin: 0.25rem 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Labels inside <strong> */
+#membersList li strong {
+  color: #222;
+}
+
+/* Link to website */
+#membersList li a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  word-break: break-word;
+}
+
+#membersList li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Zebra striping for line items */
+#membersList li {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Every other list item gets a light gray background */
+#membersList li:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Optional: Make list view full width */
+#membersList {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+/* Optional: Add spacing between elements */
+#membersList li h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+#membersList li:hover {
+  background-color: #eef7ff;
+}
+
+
+
+
+
+
   
