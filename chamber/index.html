@@ -48,53 +48,43 @@
                     <source srcset="images/digitalmedium.webp" media="(min-width: 768px)">
                     <img src="images/digitalsmall.webp" alt="Chamber Plan">
                 </picture>
+                <div class="hero-content">
+                    <h1>Product</h1>
+                    <p>Connecting YouTube Marketing and Trading</p>
+                    <button>Join Now</button>
+                </div>
             </div>
         </div>
 
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Product</h1>
-                <p>Connecting YouTube Marketing and Trading</p>
-                <button>Join Now</button>
-            </div>
-        </section>
+        <div class="banner" id="chamberBanner" style="display: none;">
+            <h2 class="banner-h1">Congratulations! You have been invited to attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</h2>
+            <button id="closeBannerBtn">x</button>
+        </div>
+        
+
 
         <!-- About Section -->
         <section class="about">
             <h2>About Us</h2>
             <div class="about-columns">
                 <div class="column">
-                    <div class="image"></div>
+                    <img src="images/chamber6.webp" alt="About the Chamber" class="column-image" loading="lazy">
                     <h3>About Chamber</h3>
                     <p>Check what it's about!</p>
                 </div>
                 <div class="column">
-                    <div class="image"></div>
+                    <img src="images/chamber6.webp" alt="Upcoming Events" class="column-image" loading="lazy">
                     <h3>Upcoming Events</h3>
                     <p>Read news from our company</p>
                 </div>
                 <div class="column">
-                    <div class="image"></div>
+                    <img src="images/chamber6.webp" alt="Membership Benefits" class="column-image" loading="lazy">
                     <h3>Membership Benefits</h3>
                     <p>Meet our amazing team</p>
                 </div>
             </div>
         </section>
-
-        <!-- Current Events Section -->
-        <section class="current-events">
-            <h2>Upcoming Events</h2>
-            <div class="event">
-                <img src="image-placeholder-event1.jpg" alt="Event Image">
-                <h3>Marketing Trends 2025</h3>
-                <p>Join us on April 15th for an exclusive webinar on YouTube marketing strategies.</p>
-            </div>
-            <div class="event">
-                <img src="image-placeholder-event2.jpg" alt="Event Image">
-                <h3>Trader's Networking Meetup</h3>
-                <p>Meet industry experts and professionals in our live event on May 10th.</p>
-            </div>
-        </section>
+        
 
         <!-- Company Spotlights Section -->
         <section class="company-spotlights">
@@ -110,7 +100,61 @@
                 <p>Learn to trade like a pro with our expert-led courses.</p>
             </div>
         </section>
+        <!-- Current Events Section -->
+        <section class="current-events">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <img src="image-placeholder-event1.jpg" alt="Event Image">
+                <h3>Marketing Trends 2025</h3>
+                <p>Join us on April 15th for an exclusive webinar on YouTube marketing strategies.</p>
+            </div>
+            <div class="event">
+                <img src="image-placeholder-event2.jpg" alt="Event Image">
+                <h3>Trader's Networking Meetup</h3>
+                <p>Meet industry experts and professionals in our live event on May 10th.</p>
+            </div>
+        </section>
 
+        <!-- Weather Section -->
+        <section class="weather-section">
+            <h2>4-Day Weather Forecast</h2>
+            <div class="weather-forecast">
+              <div class="forecast-day highlight-border">
+                <h3>Day</h3>
+                <h2 class="date">Date</h2>
+                <p class="forecast-temp">Temp</p>
+                <img class="forecast-icon" src="" alt="Weather icon" loading="lazy">
+                <p class="forecast-description">Description</p>
+              </div>
+          
+              <div class="forecast-day">
+                <h3>Day</h3>
+                <h2 class="date">Date</h2>
+                <p class="forecast-temp">Temp</p>
+                <img class="forecast-icon" src="" alt="Weather icon" loading="lazy">
+                <p class="forecast-description">Description</p>
+              </div>
+          
+              <div class="forecast-day">
+                <h3>Day</h3>
+                <h2 class="date">Date</h2>
+                <p class="forecast-temp">Temp</p>
+                <img class="forecast-icon" src="" alt="Weather icon" loading="lazy">
+                <p class="forecast-description">Description</p>
+              </div>
+          
+              <div class="forecast-day">
+                <h3>Day</h3>
+                <h2 class="date">Date</h2>
+                <p class="forecast-temp">Temp</p>
+                <img class="forecast-icon" src="" alt="Weather icon" loading="lazy">
+                <p class="forecast-description">Description</p>
+              </div>
+            </div>
+          </section>
+          
+        
+        
         <!-- Newsletter Section -->
         <section class="newsletter">
             <div class="image"></div>
@@ -150,21 +194,7 @@
         </section>
 
         <!-- Blog Section -->
-        <section class="blog">
-            <h2>Blog</h2>
-            <div class="blog-posts">
-                <div class="post">
-                    <div class="image"></div>
-                    <h3>What's up, company?</h3>
-                    <p>Company News</p>
-                </div>
-                <div class="post">
-                    <div class="image"></div>
-                    <h3>How to bake a cake</h3>
-                    <p>Everyone will love it</p>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Newsletter Signup -->
         <section class="newsletter-signup">
@@ -192,5 +222,7 @@
     </footer>
 
     <script src="scripts/menu.js"></script>
+    <script src="scripts/banner.js"></script>
+    <script src="scripts/getweather.js"></script>
 </body>
 </html>

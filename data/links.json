@@ -1,25 +1,25 @@
 {
-    "weeks": 
+  "weeks": [
+    {
+      "week": "01",
+      "links": [
         {
-          "week": "01",
-          "links": [
-            {
-              "url": "./week01/holygrail/holygrail.html",
-              "title": "HG layout"
-            },
-            {
-              "url": "./week01/media-query/media-query.html",
-              "title": "Media Query"
-            },
-            {
-              "url": "https://codepen.io/estebamontero/pen/MYWXQqX",
-              "title": "Js pen"
-            },
-
-            {
-              "url": "./week05/weather.html",
-              "title": "Weather api"
-            }
-          ]
-        
-        }}
+          "url": "./week01/holygrail/holygrail.html",
+          "title": "HG layout"
+        },
+        {
+          "url": "./week01/media-query/media-query.html",
+          "title": "Media Query"
+        },
+        {
+          "url": "https://codepen.io/estebamontero/pen/MYWXQqX",
+          "title": "Js pen"
+        },
+        {
+          "url": "./week05/weather.html",
+          "title": "Weather api"
+        }
+      ]
+    }
+  ]
+}

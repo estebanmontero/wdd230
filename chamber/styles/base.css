@@ -763,6 +763,130 @@ ul {
 }
 
 
+/* new hero content */
+#chamber-image {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+#chamber-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.4); /* Optional: adds a dark overlay behind text */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
+
+
+/*banner css*/
+
+.banner {
+  background-color: #ffffff; /* Gold color */
+  color: #030303;
+
+  text-align: center;
+
+  padding: 2em;
+  position: relative;
+  font-weight: bold;
+}
+
+.banner-h1 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#closeBannerBtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border:none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* about css */
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.column {
+  text-align: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.column-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*weather Section */
+
+.weather-section {
+  padding: 2rem;
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.weather-forecast {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.forecast-day {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.highlight-border {
+  border: 3px solid #0077cc;
+}
+
+.forecast-icon {
+  width: 80px;
+  height: auto;
+  margin: 10px 0;
+}
+
+.forecast-temp {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.forecast-description {
+  font-size: 1rem;
+  color: #555;
+}
+
 
 
 
