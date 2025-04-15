@@ -625,7 +625,7 @@ ul {
     cursor: pointer;
     border: none;
     background-color: #0099ff;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 0.25rem;
   }
   
