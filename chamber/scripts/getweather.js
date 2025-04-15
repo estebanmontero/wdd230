@@ -1,12 +1,12 @@
-
-//  WEATHER SECTION ---
-const API_KEY = '27cf22e9fba28aaf0d1b8ce242ea327c';
+// WEATHER SECTION ---
+const API_KEY = 'fb7cb41bc214f120411387cf5bbe861e';
 const forecastDays = document.querySelectorAll('.forecast-day');
 
-const lat = 6.2518;
-const lon = -75.5636;
+const lat = 34.0007
+const lon = -81.0348
 
-const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
+// Use the One Call API for forecast data
+const URL = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`;
 
 async function apiFetch() {
     try {
@@ -18,7 +18,7 @@ async function apiFetch() {
             throw Error(await response.text());
         }
     } catch (error) {
-        console.log(error);
+        console.log('Error fetching weather data:', error);
     }
 }
 
@@ -34,7 +34,7 @@ function displayResults(data) {
 
         const date = new Date(forecast.dt * 1000);
         const day = date.getDate();
-        const month = date.getMonth() + 1; 
+        const month = date.getMonth() + 1;
 
         dateElement.textContent = `${month}/${day}`;
 
@@ -44,8 +44,8 @@ function displayResults(data) {
             dayElement.querySelector('h3').textContent = getWeekdayName(date.getDay());
         }
 
-        tempElement.textContent = `${forecast.temp.day.toFixed(0)}°F`;
-        const iconSrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+        tempElement.textContent = `${forecast.temp.day.toFixed(0)}°C`;
+        const iconSrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
         iconElement.setAttribute('src', iconSrc);
         iconElement.setAttribute('alt', forecast.weather[0].description);
         descElement.textContent = forecast.weather[0].description;
@@ -58,5 +58,3 @@ function getWeekdayName(dayIndex) {
 }
 
 apiFetch();
-
-
