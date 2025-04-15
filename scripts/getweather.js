@@ -3,8 +3,8 @@ const currenttemp = document.querySelector('#current-temp');
 const weathericon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const lat = 6.25184;
-const lon = -75.56359;
+const lat = 6.2518;
+const lon = -75.5636;
 
 const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 

@@ -3,8 +3,8 @@
 const API_KEY = '27cf22e9fba28aaf0d1b8ce242ea327c';
 const forecastDays = document.querySelectorAll('.forecast-day');
 
-const lat = 6.25184;
-const lon = -75.56359;
+const lat = 6.2518;
+const lon = -75.5636;
 
 const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
 
