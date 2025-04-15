@@ -20,6 +20,23 @@
           "title": "Weather api"
         }
       ]
+    },
+
+    {
+      "week": "02",
+      "links": [
+        {
+          "url": "./week02/design.html",
+          "title": "Design Principal"
+
+        },
+        {
+          "url": "./week02/bom.html",
+          "title" : "bom excericise "
+        }
+
+
+      ]
     }
   ]
 }
