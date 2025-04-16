@@ -37,7 +37,7 @@
 
     /* Events and Spotlights */
     .current-events, .company-spotlights {
-        display: flex;
+
         justify-content: space-between;
     }
 
@@ -81,4 +81,9 @@
   }
 
 
+  @media (min-width: 768px) {
+    .column-image:hover {
+      transform: scale(1.05);
+    }
+  }
 

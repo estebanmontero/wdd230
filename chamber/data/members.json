@@ -60,6 +60,16 @@
         "membershipLevel": "Gold",
         "description": "Ofima provides ERP software solutions tailored to different business sectors including manufacturing, retail, and services. Their cloud-based tools enhance operational efficiency and decision-making through data-driven automation and management.",
         "industry": "Software / ERP Solutions"
+      },
+      {
+        "name": "Alegra S.A.S",
+        "address": "Tv. 41 #88 94 ED, Los Sauces, Medellín, Laureles, Medellín, Antioquia",
+        "phone": "+57 23 2540794",
+        "website": "https://www.alegra.com/colombia/",
+        "image": "https://www.alegra.com/assets/images/logo.png/assets/images/logo.png",
+        "membershipLevel": "Gold",
+        "description": "Alegra.com provides Superpowers for your business. The website provides options to speak with an advisor and to initiate a session.",
+        "industry": "Software / ERP Solutions"
       }
     ]
   }

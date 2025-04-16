@@ -1,12 +1,12 @@
-// WEATHER SECTION ---
-const API_KEY = 'fb7cb41bc214f120411387cf5bbe861e';
+const API_KEY = '8a79083123d8ef1d5ad73557ee563fc6';
 const forecastDays = document.querySelectorAll('.forecast-day');
 
-const lat = 34.0007
-const lon = -81.0348
+// Set your desired location
+const lat = 37.9800; 
+const lon = -122.0304;
 
-// Use the One Call API for forecast data
-const URL = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=imperial&appid=${API_KEY}`;
+// API URL using imperial units (Fahrenheit)
+const URL = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&units=metric&appid=${API_KEY}`;
 
 async function apiFetch() {
     try {
@@ -24,6 +24,7 @@ async function apiFetch() {
 
 function displayResults(data) {
     const dailyForecasts = data.daily;
+
     for (let i = 0; i < 4; i++) {
         const forecast = dailyForecasts[i];
         const dayElement = forecastDays[i];
@@ -35,19 +36,26 @@ function displayResults(data) {
         const date = new Date(forecast.dt * 1000);
         const day = date.getDate();
         const month = date.getMonth() + 1;
+        const weekday = getWeekdayName(date.getDay());
 
         dateElement.textContent = `${month}/${day}`;
 
+        // Label the day
         if (i === 0) {
             dayElement.querySelector('h3').textContent = 'Today';
         } else {
-            dayElement.querySelector('h3').textContent = getWeekdayName(date.getDay());
+            dayElement.querySelector('h3').textContent = weekday;
         }
 
-        tempElement.textContent = `${forecast.temp.day.toFixed(0)}°C`;
-        const iconSrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`;
+        // Set temperature in Fahrenheit
+        tempElement.textContent = `${forecast.temp.day.toFixed(0)}°c`;
+
+        // Use high-resolution weather icon
+        const iconSrc = `https://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png`;
         iconElement.setAttribute('src', iconSrc);
         iconElement.setAttribute('alt', forecast.weather[0].description);
+
+        // Set weather description
         descElement.textContent = forecast.weather[0].description;
     }
 }
@@ -57,4 +65,5 @@ function getWeekdayName(dayIndex) {
     return weekdays[dayIndex];
 }
 
+// Fetch and display forecast
 apiFetch();

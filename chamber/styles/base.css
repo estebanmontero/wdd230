@@ -1,5 +1,13 @@
 /* Base Styles (General Layout for All Screens) */
 
+
+:root {
+  --primary-red: #B30000;
+  --dark-gray: #333;
+
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -73,6 +81,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     max-width: 100%;
+
 }
 .hero  {
 
@@ -778,11 +787,11 @@ ul {
 
 .hero-content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.4); /* Optional: adds a dark overlay behind text */
+  background-color: rgba(255, 255, 255, 0); /* Optional: adds a dark overlay behind text */
   padding: 1rem 2rem;
   border-radius: 10px;
 }
@@ -886,6 +895,59 @@ ul {
   font-size: 1rem;
   color: #555;
 }
+
+
+/*hero  page*/
+
+
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  background-color: #B30000;;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+
+/* spotlight css*/
+
+.spotlight-card {
+  background-color: #f0f8ff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 1.2rem;
+  margin: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.spotlight-card img {
+  width: 120px;
+  height: auto;
+  margin: 1rem 0;
+}
+.spotlight-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #0056b3;
+}
+
+.members {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+
 
 
 

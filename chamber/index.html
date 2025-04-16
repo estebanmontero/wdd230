@@ -44,20 +44,21 @@
         <div id="hero">
             <div id="chamber-image">
                 <picture>
-                    <source srcset="images/digital1500x750.webp" media="(min-width: 1024px)">
-                    <source srcset="images/digitalmedium.webp" media="(min-width: 768px)">
-                    <img src="images/digitalsmall.webp" alt="Chamber Plan">
+                    <source srcset="images/hero-image-large2.webp" media="(min-width: 1024px)">
+                    <source srcset="images/hero-medium.webp" media="(min-width: 768px)">
+                    <img src="images/hero-small.webp" alt="Chamber Plan">
                 </picture>
                 <div class="hero-content">
-                    <h1>Product</h1>
-                    <p>Connecting YouTube Marketing and Trading</p>
-                    <button>Join Now</button>
+                    <h1>MARKETING & TRADING</h1>
+                    <p>CHAMBER OF COMMERCE</p>
+                    <a href="join.html" class="btn">Join Now</a>
                 </div>
+                
             </div>
         </div>
 
         <div class="banner" id="chamberBanner" style="display: none;">
-            <h2 class="banner-h1">Congratulations! You have been invited to attend the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.</h2>
+            <h2 class="banner-h1">Congratulations! You have been invited to attend the Chamber of Commerce meeting on Wednesday at 7:00 p.m.</h2>
             <button id="closeBannerBtn">x</button>
         </div>
         
@@ -68,17 +69,17 @@
             <h2>About Us</h2>
             <div class="about-columns">
                 <div class="column">
-                    <img src="images/chamber6.webp" alt="About the Chamber" class="column-image" loading="lazy">
+                    <img src="images/marketing-commerce.webp" alt="About the Chamber" class="column-image" loading="lazy">
                     <h3>About Chamber</h3>
                     <p>Check what it's about!</p>
                 </div>
                 <div class="column">
-                    <img src="images/chamber6.webp" alt="Upcoming Events" class="column-image" loading="lazy">
+                    <img src="images/empresarial-1.webp" alt="Upcoming Events" class="column-image" loading="lazy">
                     <h3>Upcoming Events</h3>
                     <p>Read news from our company</p>
                 </div>
                 <div class="column">
-                    <img src="images/chamber6.webp" alt="Membership Benefits" class="column-image" loading="lazy">
+                    <img src="images/people-talking.webp" alt="Membership Benefits" class="column-image" loading="lazy">
                     <h3>Membership Benefits</h3>
                     <p>Meet our amazing team</p>
                 </div>
@@ -87,29 +88,26 @@
         
 
         <!-- Company Spotlights Section -->
+<!-- Company Spotlights Section -->
         <section class="company-spotlights">
-            <h2>Featured Businesses</h2>
-            <div class="spotlight">
-                <img src="image-company1.jpg" alt="Company Logo">
-                <h3>ABC Marketing Solutions</h3>
-                <p>Helping businesses grow with powerful video marketing strategies.</p>
-            </div>
-            <div class="spotlight">
-                <img src="image-company2.jpg" alt="Company Logo">
-                <h3>XYZ Trading Academy</h3>
-                <p>Learn to trade like a pro with our expert-led courses.</p>
-            </div>
-        </section>
+            <h2 class="members">Members' Spotlight</h2>
+            
+            <div id="spotlight-container"></div>
+
+
+
+         </section>
+  
         <!-- Current Events Section -->
         <section class="current-events">
             <h2>Upcoming Events</h2>
             <div class="event">
-                <img src="image-placeholder-event1.jpg" alt="Event Image">
+
                 <h3>Marketing Trends 2025</h3>
                 <p>Join us on April 15th for an exclusive webinar on YouTube marketing strategies.</p>
             </div>
             <div class="event">
-                <img src="image-placeholder-event2.jpg" alt="Event Image">
+
                 <h3>Trader's Networking Meetup</h3>
                 <p>Meet industry experts and professionals in our live event on May 10th.</p>
             </div>
@@ -157,50 +155,17 @@
         
         <!-- Newsletter Section -->
         <section class="newsletter">
-            <div class="image"></div>
+            <img src="images/people-helping1.webp" alt="About the Chamber" class="column-image" loading="lazy">
+
             <div class="newsletter-info">
                 <h2>Newsletter</h2>
-                <p>Stay in the loop with our chamber news. Sign up to receive updates.</p>
-                <button>Sign Up</button>
+                <p>Welcome to the Marketing & Trading Chamber of Commerce — where innovation meets opportunity. Whether you're a startup looking to build strong industry connections or an established business aiming to expand your market reach, our chamber is your launchpad for growth. We provide exclusive access to business networking events, digital marketing resources, and up-to-date trade insights that help your organization thrive in today fast-paced economy.
+                    Join a thriving community of entrepreneurs, marketers, and innovators who are shaping the future of commerce. As a member, you'll gain visibility, credibility, and the support needed to take your business to the next level. Let us be your trusted partner in success — connect, grow, and lead with the Marketing & Trading Chamber of Commerce.</p>
+
             </div>
         </section>
 
-        <!-- Careers Section -->
-        <section class="careers">
-            <div class="career-info">
-                <h2>Careers</h2>
-                <p>Join our ambitious team and help us reach the sky!</p>
-                <button>Check Out</button>
-            </div>
-            <div class="image"></div>
-        </section>
 
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <h2>Testimonials</h2>
-            <p>People love this!</p>
-            <div class="testimonial">
-                <p>"This product brings so much value, I LOVE IT!"</p>
-                <p>⭐⭐⭐⭐⭐ - Alex Turner</p>
-            </div>
-            <div class="testimonial">
-                <p>"This product was sent from heaven!"</p>
-                <p>⭐⭐⭐⭐⭐ - Dolly Parton</p>
-            </div>
-            <div class="testimonial">
-                <p>"100% happiness."</p>
-                <p>⭐⭐⭐⭐⭐ - James Blake</p>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-
-
-        <!-- Newsletter Signup -->
-        <section class="newsletter-signup">
-            <input type="email" placeholder="Your Email">
-            <button>Subscribe</button>
-        </section>
 
 
 
@@ -217,5 +182,9 @@
     <script src="scripts/menu.js"></script>
     <script src="scripts/banner.js"></script>
     <script src="scripts/getweather.js"></script>
+    <script src="scripts/spotlight.js"></script>
 </body>
 </html>
+
+
+
